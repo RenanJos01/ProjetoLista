@@ -1,0 +1,56 @@
+*{
+}
+th, tr, td{
+    border:2px #4169e1 solid;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    background-color: #4169e1;
+    font-size: 50px;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+th, td{
+    margin: 0px;    
+}
+th{
+    background-color: #4169e1;
+}
+.thead{
+    color: white;
+}
+.coluna{
+    color: white;
+    padding-right: 500px;
+    text-align: center;
+}
+.item{
+    text-align: left;
+}
+#bloco{
+    display: block;
+    position: fixed;
+}
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+    width: 100%;
+    border-radius: 20px;
+}
+label{
+	color: #555;
+	display: block;
+    margin-bottom: .2em;
+    padding-left:15px;
+}
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
