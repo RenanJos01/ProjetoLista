@@ -13,11 +13,11 @@
         <table>
             <thead id="tTabela">
                 <tr>
-                    <th class="thead"></th>
+                    <th class="checkbox"></th>
                     <th class="coluna">Itens</th>
-                    <th class="thead">Quantidade</th>
-                    <th class="thead">Preço Unitário  (R$)</th>
-                    <th class="thead">Preço Total  (R$)</th>
+                    <th class="thead" >Quantidade</th>
+                    <th class="thead"colspan="2">Preço Unitário </th>
+                    <th class="thead"colspan="2">Preço Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,7 +25,9 @@
                     <td></td>
                     <td class="item">Alface</td>
                     <td class="quant">03</td>
+                    <td class="moeda">R$</td>
                     <td class="pUnitario">10,00</td>
+                    <td class="moeda">R$</td>
                     <td class="pTotal">30,00</td>
                 </tr>
             </tbody>
@@ -37,9 +39,18 @@
                 <label for="item">Item</label>
                 <input type="text" id="item" name="item"  class="campo" placeholder="Insira o nome do item">
             </div>
+            <div class="grupo"> 
+                <label for="quantidade">Quantidade</label>
+                <input type="text" id="quantidade" name="quantidade"  class="campo" placeholder="Insira o nome do item">
+            </div>
+            <div class="grupo"> 
+                <label for="pUnitario">Preço Unitário</label>
+                <input type="text" id="pUnitario" name="pUnitario"  class="campo" placeholder="Insira o nome do item">
+            </div>
+            <button id="cadastrar">Cadastrar</button>
         </form>
     </section>
-    </div>
+</div>
 </body>
 <script src="js/index.js"></script>
 
