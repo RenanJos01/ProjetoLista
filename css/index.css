@@ -1,81 +1,151 @@
-*{
+* {
     font-family: Comic Sans MS;
 }
-th, tr, td{
-    border:2px #4169e1 solid;
-    padding:1em;
+
+th,
+tr,
+td {
+    border: 2px #008CBA solid;
+    padding: 1em;
     margin: 10%;
 }
-h2{
+
+h2 {
     text-align: center;
-    background-color: #4169e1;
+    background-color: #008CBA;
     font-size: 30pt;
     height: 80px;
     padding-top: .5em;
     color: white;
 }
-table{
+
+table {
     display: inline;
     border-collapse: collapse;
 }
-th, td{
+
+th,
+td {
     margin: 0em;
 }
-th{
-    background-color: #4169e1;
+
+th {
+    background-color: #008CBA;
 }
-thead{
+
+thead {
     text-align: left;
 }
-.thead{
+
+.thead {
     color: white;
-    width: 15em;
+    width: 10em;
 }
-.coluna{
+
+.coluna {
     color: white;
     width: 30em;
 }
-.item{
+
+.item {
     text-align: left;
 }
-#bloco{
+
+#bloco {
     width: auto;
     display: block;
     position: center;
     margin-left: 20%;
     margin-right: 20%;
 }
-.campo{
+
+.campo {
     margin: 0;
-	padding-bottom: 1em;
-	width: 100%;
+    padding-bottom: 1em;
+    width: 100%;
     border: 2px solid #ccc;
-	padding: .7em;
+    padding: .7em;
     width: 100%;
     border-radius: 20px;
 }
-label{
+
+label {
     color: #555;
-	display: block;
+    display: block;
     margin-bottom: .2em;
-    padding-left:1em;
+    padding-left: 1em;
 }
-.grupo{
+
+.grupo {
     margin-right: 1em;
-	width: 20%;
-	display: inline-block;
+    width: 20%;
+    display: inline-block;
     padding: 1em 0em;
 }
 
+/*BOTÃO*/
+#cadastrar {
+    padding: 1em;
+    font-size: 14pt;
+    margin-left: 1em;
+    color: #008CBA;
+    background-color: white;
+    border-radius: 40px;
+    transition-duration: .4s;
+    text-align: center;
+    border: #008CBA solid;
+    text-decoration: none;
+}
+
+#cadastrar:hover {
+    color: white;
+    background-color: #008CBA;
+    cursor: hand;
+}
+
+
 /*CSS pra arrumar o R$*/
-.moeda{
-    border-left:2px #4169e1 solid;
+.moeda {
+    border-left: 2px #008CBA solid;
     border-right: 0px;
-    color: #4169e1;
-    padding-right:0em;
+    color: #008CBA;
+    padding-right: 0em;
     width: 1.5em;
 }
-.pTotal, .pUnitario{
-    border:none;
+
+ .pTotal,
+.pUnitario {
+    border: none;
     padding-left: 0;
+}
+
+/*BOTAO DELETE/CONFIRM*/
+.button-confirm {
+    width: 2em;
+    text-align: center;
+    color: black;
+    transition: .2s;
+}
+
+.button-confirm:hover {
+    cursor: hand;
+    color: white;
+    background-color: #4CAF50;
+}
+
+.button-delete {
+    width: 2em;
+    text-align: center;
+    color: black;
+    transition: .2s;
+}
+
+.button-delete:hover {
+    cursor: hand;
+    color: white;
+    background-color: #f44336;
+}
+.fadeOut{
+    opacity: 0;
+    transition: .2s;
 }

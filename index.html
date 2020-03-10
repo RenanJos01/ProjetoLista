@@ -3,55 +3,64 @@
 <head>
     <link href="css/index.css" type="text/css" rel="stylesheet">
     <meta charset="utf-8">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
     <title>Checklist Compras</title>
 </head>
 
 <body>
     <h2 id="titulo">Lista de compra</h2>
     <div id="bloco">
-    <section>
-        <table>
-            <thead id="tTabela">
-                <tr>
-                    <th class="checkbox"></th>
-                    <th class="coluna">Itens</th>
-                    <th class="thead" >Quantidade</th>
-                    <th class="thead"colspan="2">Preço Unitário </th>
-                    <th class="thead"colspan="2">Preço Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td class="item">Alface</td>
-                    <td class="quant">03</td>
-                    <td class="moeda">R$</td>
-                    <td class="pUnitario">10,00</td>
-                    <td class="moeda">R$</td>
-                    <td class="pTotal">30,00</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section>
-        <form>
-            <div class="grupo"> 
-                <label for="item">Item</label>
-                <input type="text" id="item" name="item"  class="campo" placeholder="Insira o nome do item">
-            </div>
-            <div class="grupo"> 
-                <label for="quantidade">Quantidade</label>
-                <input type="text" id="quantidade" name="quantidade"  class="campo" placeholder="Insira o nome do item">
-            </div>
-            <div class="grupo"> 
-                <label for="pUnitario">Preço Unitário</label>
-                <input type="text" id="pUnitario" name="pUnitario"  class="campo" placeholder="Insira o nome do item">
-            </div>
-            <button id="cadastrar">Cadastrar</button>
-        </form>
-    </section>
-</div>
+        <section>
+            <span id="mensagem-erro"></span>
+            <form id="form-item">
+                <div class="grupo">
+                    <label for="item">Item</label>
+                    <input type="text" id="item" name="item" class="campo" placeholder="Ex: Alface">
+                </div>
+                <div class="grupo">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" name="quantidade" class="campo"
+                        placeholder="Ex: 5">
+                </div>
+                <div class="grupo">
+                    <label for="pUnitario">Preço Unitário</label>
+                    <input type="number" id="pUnitario" name="pUnitario" class="campo"
+                        placeholder="Ex: 3.00">
+                </div>
+                <button id="cadastrar">Cadastrar</button>
+            </form>
+        </section>
+        <section>
+            <table>
+                <thead id="tTabela">
+                    <tr>
+                        <th class="buton" colspan="2"></th>
+                        <th class="coluna">Itens</th>
+                        <th class="thead">Quantidade</th>
+                        <th class="thead" colspan="2">Preço Unitário </th>
+                        <th class="thead"colspan="2">Preço Total</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-item">
+                    <tr>
+                        
+                        <td class="button-delete">X</td>
+                        <td class="button-confirm">✓</td>
+                        <td class="item">Alface</td>
+                        <td class="quant">03</td>
+                        <td class="moeda">R$</td>
+                        <td class="pUnitario">10 </td>
+                        <td class="moeda">R$</td>
+                        <td class="pTotal">Preço Total</td>
+                    </tr>
+                </thead>
+                </tbody>
+            </table>
+        </section>
+    </div>
 </body>
+<script src="js/delete.js"></script>
+<script src="js/pTotal.js"></script>
 <script src="js/index.js"></script>
 
 </html>
