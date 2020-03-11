@@ -26,9 +26,6 @@ function montarTr(item) {
     tr.appendChild(montarTd(calcPTotal(item), "pTotal"));
 
     table.appendChild(tr);
-    console.log(carregarBotao())
-
-
 }
 
 function montarTd(valor, classe) {

@@ -85,16 +85,16 @@ label {
 
 /*BOTÃO*/
 #cadastrar {
-    padding: 1em;
-    font-size: 14pt;
+    font-size: 25pt;
     margin-left: 1em;
     color: #008CBA;
     background-color: white;
-    border-radius: 40px;
+    border-radius: 50px;
     transition-duration: .4s;
-    text-align: center;
     border: #008CBA solid;
     text-decoration: none;
+    width: 2em;
+    height: 2em;
 }
 
 #cadastrar:hover {
@@ -113,7 +113,7 @@ label {
     width: 1.5em;
 }
 
- .pTotal,
+.pTotal,
 .pUnitario {
     border: none;
     padding-left: 0;
@@ -125,6 +125,7 @@ label {
     text-align: center;
     color: black;
     transition: .2s;
+    text-decoration: none;
 }
 
 .button-confirm:hover {
@@ -138,6 +139,7 @@ label {
     text-align: center;
     color: black;
     transition: .2s;
+    text-decoration: none;
 }
 
 .button-delete:hover {
@@ -145,7 +147,8 @@ label {
     color: white;
     background-color: #f44336;
 }
-.fadeOut{
+
+.fadeOut {
     opacity: 0;
     transition: .2s;
 }
