@@ -17,7 +17,6 @@ function montarTr(item) {
     tr.classList.add("item")
 
     tr.appendChild(montarTd("X", "button-delete"));
-    tr.appendChild(montarTd("✓","button-confirm"));
     tr.appendChild(montarTd(item.item, "item"));
     tr.appendChild(montarTd(item.quantidade, "quant"));
     tr.appendChild(montarTd(item.moeda, "moeda"));
